@@ -1,0 +1,33 @@
+@property --highlight-color {
+	inherits: true;
+	initial-value: red;
+	syntax: "<color>";
+}
+
+@property --gap-spacing {
+	inherits: false;
+	initial-value: 1em;
+	syntax: "<length-percentage>";
+}
+
+@property --does-nothing {
+	inherits: false;
+	initial-value: ;
+	syntax: "*";
+}
+
+:root {
+	--detect-color: rebeccapurple;
+	--detect-length: 33em;
+	--detect-percentage: 56.26%;
+	--detect-number: .5;
+	--detect-image: url("image.webp");
+	--detect-url: url(something-else);
+	--detect-integer: 300;
+	--detect-angle: 360deg;
+	--detect-time: .2s;
+	--detect-resolution: 192dpi;
+	--detect-transform-function: scale(2, 2);
+	--detect-string: "some string";
+	--detect-border: 5px solid rebeccapurple;
+}
